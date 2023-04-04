@@ -1,0 +1,26 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.left-part {
+  text-align: left;
+}
+.left-part p{
+  margin-bottom: 5px;
+}
+
+
+.right-part {
+  text-align: right;
+}
+
+.right-part a {
+  margin-left: 10px;
+  color: #fff;
+}

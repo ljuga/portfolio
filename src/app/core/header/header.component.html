@@ -1,0 +1,25 @@
+<nav class="navbar" [ngClass]="{'navbar--mobile-open': isMobileMenuOpen}">
+  <div class="navbar-container">
+    <a href="#" class="navbar-logo">JL</a>
+
+    <ul class="navbar-menu">
+      <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+      <li class="navbar-item"><a href="#experiencia">Formacion</a></li>
+      <li class="navbar-item"><a href="#proyectos">Proyectos</a></li>
+      <li class="navbar-item"><a href="#skills">Habilidades</a></li>
+      <li class="navbar-item"><a href="#contacto">Contacto</a></li>
+    </ul>
+
+
+    <button class="navbar-toggle" (click)="toggleMobileMenu()">
+      <span class="navbar-toggle-icon"><i class="fa-solid fa-bars"></i></span>
+    </button>
+  </div>
+  <ul class="navbar-mobile-menu" [ngClass]="{'navbar-mobile-menu--open': isMobileMenuOpen}">
+    <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+    <li class="navbar-item"><a href="#experiencia">Formacion</a></li>
+    <li class="navbar-item"><a href="#proyectos">Proyectos</a></li>
+    <li class="navbar-item"><a href="#skills">Habilidades</a></li>
+    <li class="navbar-item"><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>

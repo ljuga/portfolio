@@ -1,0 +1,47 @@
+.container{
+background: rgb(218, 218, 218);
+    padding-top: 70px;
+    height: 870px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+.itemscontainer{
+    display: flexbox;
+    margin-top: 250px;
+    margin-left: 10vw;
+}
+h2{
+    font-size: 3em;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    width: 50%;
+    font-size: 1.4em;
+}
+
+
+/* Dispositivos moviles*/
+  @media (max-width: 768px) {
+    .container{
+        margin-top: 80px;
+        background: #e0d8d8;
+        height: 500px;
+    }
+    .itemscontainer{
+        margin-top: 30px;
+        margin-left: 10%;
+    }
+    h2{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    p{
+        width: 50%;
+        font-size: 1em;
+    }
+    
+  }
+  

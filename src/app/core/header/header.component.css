@@ -1,0 +1,137 @@
+/* Barra de navegación */
+.navbar {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(248, 248, 248, 0.8); /* Agregar transparencia al fondo */
+  height: 60px;
+  padding: 0 40px;
+  padding-top: 10px;
+  backdrop-filter: blur(10px); /* Agregar efecto de desenfoque */
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-family: 'Changa One', cursive;
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin: 0 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.navbar-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: red;
+  transition: width 0.2s ease-in-out;
+}
+
+.navbar-item:hover::after {
+  width: 100%;
+}
+.navbar-item a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+
+/* Menú móvil */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  margin-right: 20px;
+}
+
+.navbar-toggle:focus {
+  outline: none;
+}
+
+.navbar-toggle-icon {
+  color: black;
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.navbar-mobile-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  display: none;
+}
+
+.navbar-item {
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-mobile-menu {
+    display: none;
+  }
+  .navbar-logo {
+    margin-right: 300%;
+  }
+  .navbar-toggle-icon {
+    margin-left: 200%;
+  }
+
+  .navbar-mobile-menu--open {
+    display: block;
+  }
+
+  .navbar--mobile-open .navbar-mobile-menu {
+    display: block;
+  }
+
+  .navbar-item {
+    margin: 10px 0;
+  }
+  
+}
